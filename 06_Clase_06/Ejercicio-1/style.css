@@ -1,0 +1,17 @@
+body {
+    background-color: aquamarine;
+    align-items: center;
+}
+.cont-div-footer{
+    display: flex;
+    background-color: black;
+    color: darkorange;
+}
+
+.css-input{
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(169, 245, 134);
+    font-weight: bold;
+}

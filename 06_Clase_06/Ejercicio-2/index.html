@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/JavaScript/06_Clase_06/Ejercicio-2/Img/favicon.png" type="image/x-icon">
+    <title>Clase 6: Ejercicio 2</title>
+  </head>
+
+  <body>
+    <div id="div-body">
+      <div class="main-section">
+
+        <form method="get" action="entradas.html">
+
+          <fieldset>
+            <legend>Datos personales</legend>
+
+            <div class="cont-info-personal1">
+
+              <div>
+                <label for="nombre">Nombre: </label>
+                <input
+                  type="text"
+                  placeholder="Brad"
+                  id="nombre"
+                  name="nombre"
+                  required
+                /><br />
+
+                <label for="apellidos">Apellidos: </label>
+                <input
+                  type="text"
+                  placeholder="Pitt"
+                  id="apellidos"
+                  name="apellidos"
+                  required
+                /><br />
+              </div>
+
+              <div>
+                <label for="telefono">Teléfono: </label>
+                <input
+                  type="tel"
+                  pattern="+34 [0-9]{3} [0-9]{3} [0-9]{3}"
+                  placeholder="+34 123 456 789"
+                  id="telefono"
+                  name="telefono"
+                  required
+                /><br />
+
+                <label for="email">E-mail:</label>
+                <input
+                  type="email"
+                  placeholder="bradpitt@movie.com"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+
+            </div>
+          </fieldset>
+
+
+          <fieldset class="field-ciudad">
+            <legend>¿Cuál de nuestros cines piensas visitar?</legend>
+
+            <div class="cont-fieldset">
+              <input type="radio" id="ciudad" name="ciudad" value="Barcelona" />
+              <label for="ciudad"> Barcelona</label><br />
+              <input type="radio" id="ciudad" name="ciudad" value="Sant_Cugat" />
+              <label for="ciudad"> Sant Cugat</label><br />
+              <input type="radio" id="ciudad" name="ciudad" value="Badalona" />
+              <label for="ciudad"> Badalona</label>
+            </div>
+
+          </fieldset>
+
+
+          <fieldset class="field-peliculas">
+            <legend>¿Qué película quieres ver?</legend>
+
+            <div class="posters">
+              <img id="img-posters"
+                src="/JavaScript/06_Clase_06/Ejercicio-2/Img/lotr.jpg"
+                alt="lotr"
+              />
+              <input
+                type="radio"
+                id="pelicula"
+                name="pelicula1"
+                value="lotr-for"
+              />
+              <label for="pelicula"
+                >The Lord Of The Rings: <br>Fellowship of the Rings</label
+              >
+            </div>
+
+            <div class="posters">
+              <img id="img-posters"
+                src="/JavaScript/06_Clase_06/Ejercicio-2/Img/matrix.jpg"
+                alt="matrix"
+              />
+              <input type="radio" id="pelicula" name="pelicula2" value="matrix" />
+              <label for="pelicula">The Matrix</label>
+            </div>
+
+            <div class="posters">
+              <img id="img-posters"
+                src="/JavaScript/06_Clase_06/Ejercicio-2/Img/starwars.jpg"
+                alt="starwars"
+              />
+              <input
+                type="radio"
+                id="pelicula"
+                name="pelicula3"
+                value="starwars1"
+              />
+              <label for="pelicula">Star Wars: <br>Phantom Menace</label>
+            </div>
+
+            <div class="posters">
+              <img id="img-posters"
+                src="/JavaScript/06_Clase_06/Ejercicio-2/Img/terminator2.jpg"
+                alt="terminator2"
+              />
+              <input
+                type="radio"
+                id="pelicula"
+                name="pelicula4"
+                value="terminator2"
+              />
+              <label for="pelicula">Terminator 2: <br> Judgment Day</label>
+            </div>
+
+            <div class="posters">
+              <img id="img-posters"
+                src="/JavaScript/06_Clase_06/Ejercicio-2/Img/pulpfiction.jpg"
+                alt="pulpfiction"
+              />
+              <input
+                type="radio"
+                id="pelicula"
+                name="pelicula5"
+                value="pulpfiction"
+              />
+              <label for="pelicula">Pulp Fiction</label>
+            </div>
+
+            <div class="posters">
+              <img id="img-posters"
+                src="/JavaScript/06_Clase_06/Ejercicio-2/Img/inception.jpg"
+                alt="inception"
+              />
+              <input
+                type="radio"
+                id="pelicula"
+                name="pelicula6"
+                value="inception"
+              />
+              <label for="pelicula">Inception</label>
+
+            </div>
+
+          </fieldset>
+
+          <fieldset class="field-enviar">
+            <div>
+              <legend>Escoge la fecha y hora de tus tickets</legend>
+              <input type="datetime-local" />
+            </div>
+            <div>
+              <input id="boton-imprimir" type="button" value="Imprimir entradas" onclick="entradas()">
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

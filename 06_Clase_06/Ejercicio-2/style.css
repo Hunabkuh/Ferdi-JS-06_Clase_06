@@ -1,0 +1,110 @@
+body {
+    margin: 0px;
+}
+
+#div-body {
+    background-image: url(/JavaScript/06_Clase_06/Ejercicio-2/Img/ticket.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+}
+
+.main-section {
+    display: block;
+    background-color: transparent;
+}
+
+.posters {
+    border-style: dotted;
+    border-color: rgb(239, 240, 194);
+    padding: 10px;
+    justify-items: center;
+    display: grid;
+    box-shadow: 5px 5px 5px rgb(107, 107, 107);
+}
+
+#img-posters {
+    width: 95px;
+    height: auto;
+}
+
+.cont-info-personal {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.cont-fieldset {
+    display: flex;
+    justify-items: center;
+}
+
+.field-peliculas {
+    display: flex;
+    gap: 5px;
+}
+
+.field-enviar {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    border-style: dotted;
+    border-color: rgb(151, 142, 131);
+    border-width: 2px;
+    border-radius: 7px;
+}
+
+#boton-imprimir.hover {
+    background-color: aqua;
+    color: aquamarine;
+    font-size: larger;
+}
+
+.container-ticket-impreso {
+    display: block;
+    justify-content: center;
+
+}
+
+#nombre-completo {
+    display: flex;
+    font-size: large;
+    width: fit-content;
+
+
+}
+
+#nombre-ticket,
+#apellido-ticket,
+#cine-ticket,
+#pelicula-ticket,
+#fecha-ticket {
+    /* width: fit-content;
+    height: fit-content; */
+    margin: 15px;
+    border-style: dotted;
+    font-size: x-large;
+}
+
+#body-impreso {
+    background-image: url(/JavaScript/06_Clase_06/Ejercicio-2/Img/ticket2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+#img-peli {
+    display: flex;
+    width: 150px;
+    height: auto;
+}

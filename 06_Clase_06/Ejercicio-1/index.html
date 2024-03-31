@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Clase 6: Ejercicio 1</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Calculadora de IMC</h1>
+      <h3>Muy pero muy básica y sencilla...</h3>
+    </header>
+
+    <section>
+      <div>
+        <form action="">
+          <input
+            class="css-input"
+            type="number"
+            placeholder="Introduce tu peso actual aquí..."
+            name="peso"
+            id="peso"
+          />
+
+          <input
+            class="css-input"
+            type="number"
+            placeholder="Introduce tu altura aquí en cm..."
+            name="altura"
+            id="altura"
+          />
+
+          <input type="button" value="Calcular" onclick="bmi()" />
+        </form>
+      </div>
+
+      <div>
+        <h1>Resultado</h1>
+
+        <div id="resultado">Resultado</div>
+
+        <div id="respuesta-bmi-inferior"></div>
+        <div id="respuesta-bmi-normal"></div>
+        <div id="respuesta-bmi-sobrepeso"></div>
+        <div id="respuesta-bmi-obesidad"></div>
+        <div id="respuesta-nula"></div>
+      </div>
+    </section>
+    
+    <script src="main.js"></script>
+  </body>
+</html>
